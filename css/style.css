@@ -6,7 +6,8 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: blanchedalmond;
+    background-color: rgba(196, 196, 196, 0.479);
+    
 }
 
 title {
@@ -35,6 +36,14 @@ header h1 {
     font-size: 36px;
     color: white;
     text-shadow: 0 0 10px rgb(200, 123, 219);
+}
+header h1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: #c438fc;
 }
 
 header nav {
@@ -66,6 +75,27 @@ header nav ul li a:hover {
     text-shadow: none;
   }
 
+.projects {
+  align-items: center;
+}
+
+
+  .projectimage img {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    padding: 3px;
+    justify-content: space-between;
+
+
+  }
+
+  .projectimage img:hover {
+    border-color: #c438fc;
+    border-style: dashed 2px;
+  }
+
 
 section {
     padding: 60px;
@@ -80,6 +110,7 @@ section {
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
+    align-items: center;
   }
 
 .contact-form {
@@ -96,17 +127,28 @@ section {
     width: 50%;
 }
 
-.contact-form a {
+.contact-form ul li {
     font-size: 40px;
-    border-bottom: 1px solid;
+    font-style: bold;
+    list-style: none;
     color: black;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
-    
-
+    text-decoration: none;
 }
+.contact-form ul li:hover {
+    color: #c438fc;
+    animation: reverse;
+    }
+
+.contact-form ul li::after {
+  text-decoration: none;
+  color: #000000;
+
+}    
+
 
 .contact-form input, .contact-form textarea {
     border: 1px solid #024e76;
@@ -157,6 +199,7 @@ section {
   .flex-row {
     display: flex;
     text-align: center;
+    align-items: center;
   }  
 
 .flex-row p {
@@ -165,5 +208,6 @@ section {
 
 
 
-
+@media screen and (max-width: 575px) {
+}
 
